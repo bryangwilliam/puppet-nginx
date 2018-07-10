@@ -128,6 +128,8 @@ class nginx (
   Array $proxy_ignore_header                                 = [],
   $sendfile                                                  = 'on',
   String $server_tokens                                      = 'on',
+  Optional[String] $snippets_dir                             = undef,
+  Boolean $manage_snippets_dir                               = true,
   $spdy                                                      = 'off',
   $http2                                                     = 'off',
   $ssl_stapling                                              = 'off',
